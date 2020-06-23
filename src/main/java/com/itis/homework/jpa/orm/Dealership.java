@@ -25,8 +25,6 @@ public class Dealership {
     @Where(clause = "type like '%truck%' and sold = false")
     private List<Car> truckList;
 
-    @OneToMany(mappedBy = "dealer", fetch = FetchType.LAZY)
-    private List<Car> cars;
 
     @Override
     public String toString() {
